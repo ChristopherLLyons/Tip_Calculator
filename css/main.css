@@ -1,0 +1,13 @@
+body {
+    background-color: gray;
+}
+ 
+ #container {
+    background-color: white;
+    height: 525px;
+    width: 360px;
+    margin: 100px auto; /* Give the element a margin of 100px on the top and bottom and autopmatically calculate the left and right margin to centert it horizontally */
+    border-radius: 20px; /* Round off the edges of the element */
+    box-shadow: 5px 10px blue;
+}
+ 
