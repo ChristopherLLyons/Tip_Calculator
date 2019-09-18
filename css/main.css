@@ -1,13 +1,39 @@
 body {
-    background-color: gray;
+    background-image: linear-gradient(to right, rgb(176, 250, 116), #93B1A7);
 }
- 
- #container {
+#container {
     background-color: white;
     height: 525px;
     width: 360px;
     margin: 100px auto; /* Give the element a margin of 100px on the top and bottom and autopmatically calculate the left and right margin to centert it horizontally */
     border-radius: 20px; /* Round off the edges of the element */
-    box-shadow: 5px 10px blue;
+    box-shadow: 10px 10px 20px black; /* Box shadow properties: horizontal offset (required), vertical offset (required), blur (optional), spread (optional), color (optional) */
 }
- 
+h1 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px 10px;
+    margin: 0;
+    font-size: 30px;
+    font-weight: normal;
+    font-family: 'Coiny', cursive;
+}
+
+#userInput {
+    padding-left: 20px;
+    font-family: 'Coiny', cursive;
+    font-size: 25px;
+}
+
+#billAmt {
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+#billAmt:focus {
+    border: 3px solid black;
+    outline: none;
+}
