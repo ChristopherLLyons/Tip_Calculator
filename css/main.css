@@ -3,8 +3,8 @@ body {
 }
 #container {
     background-color: white;
-    height: 525px;
-    width: 360px;
+    height: 650px;
+    width: 425px;
     margin: 100px auto; /* Give the element a margin of 100px on the top and bottom and autopmatically calculate the left and right margin to centert it horizontally */
     border-radius: 20px; /* Round off the edges of the element */
     box-shadow: 10px 10px 20px black; /* Box shadow properties: horizontal offset (required), vertical offset (required), blur (optional), spread (optional), color (optional) */
@@ -25,15 +25,36 @@ h1 {
 #userInput {
     padding-left: 20px;
     font-family: 'Coiny', cursive;
-    font-size: 25px;
+    font-size: 23px;
 }
 
-#billAmt {
+#billAmt, #serviceQuality, #numPeople{ /* Elements with the ID of billAmt and serviceQuality will both recieve these styles */
     margin-left: 20px;
     font-size: 14px;
+    font-family: 'Coiny', cursive;
 }
 
-#billAmt:focus {
+#billAmt:focus, #serviceQuality:focus, #numPeople:focus{
     border: 3px solid black;
     outline: none;
 }
+
+button {
+    font-size: 20px;
+    display: block;
+    margin: 30px auto;
+    font-family: 'Coiny', cursive;
+    font-weight: bold;
+    width: 200px;
+    height: 50px;
+    background-image: linear-gradient(to right, rgb(176, 250, 116), #93B1A7);
+}
+
+button:hover {
+    background-color: white;
+}
+
+button:focus {
+    outline: none;
+}
+

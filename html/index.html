@@ -10,24 +10,40 @@
    <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
 </head>
 
-<body>
-   <!-- Container for the tip calculator -->
-   <div id="container">
-       <h1>TIP CALCULATOR</h1>
+   <body>
+      <!-- Container for the tip calculator -->
+      <div id="container">
+         <h1>TIP CALCULATOR</h1>
 
-       <!-- Container for the user inputs and the submit button -->
-       <div id="userInput">
-           <!-- Form to hold our tip calculator inputs -->
-           <form>
-                <p>How much was your bill?</p>
-                <input id="billAmt" type="text" placeholder="Bill Amount">
-                <P>How was your service?</P>
-                <p>How many people are sharing the bill?</p>
-           </form>
-       </div>
+         <!-- Container for the user inputs and the submit button -->
+         <div id="userInput">
+            <!-- Form to hold our tip calculator inputs -->
+            <form>
+                  <p>How much was your bill?</p>
+                  <input id="billAmt" type="text" placeholder="Bill Amount">
+
+                  <P>How was your service?</P>
+                  <!-- Drop down menue to select service quality -->
+                  <select id="serviceQuality">
+                     <option selected disabled value="0">-- Choose an option --</option>
+                     <option value="0.3">30% - Outstanding</option>
+                     <option value="0.2">20% - Good</option>
+                     <option value="0.15">15% - Ok</option>
+                     <option value="0.1">10% - Bad</option>
+                     <option value="0.05">5% - Terrible</option>
+                  </select>
+
+
+                  <p>How many people are sharing the bill?</p>
+                  <input id="numPeople" type="text" placeholder="Number of People">
+                  <button type="button" id="calculateTip">Calculate!</button>
+
+
+            </form>
+         </div>
    
-    </div>
-   <!-- Linking scripts.js -->
-   <script type="text/javascript" src="../js/scripts.js"></script>
-</body>
+      </div>
+      <!-- Linking scripts.js -->
+      <script type="text/javascript" src="../js/scripts.js"></script>
+   </body>
 </html>
