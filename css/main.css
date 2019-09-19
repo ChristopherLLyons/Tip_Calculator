@@ -3,8 +3,8 @@ body {
 }
 #container {
     background-color: white;
-    height: 700px;
-    width: 450px;
+    height: 800px;
+    width: 500px;
     margin: 100px auto; /* Give the element a margin of 100px on the top and bottom and autopmatically calculate the left and right margin to centert it horizontally */
     border-radius: 20px; /* Round off the edges of the element */
     box-shadow: 10px 10px 20px black; /* Box shadow properties: horizontal offset (required), vertical offset (required), blur (optional), spread (optional), color (optional) */
